@@ -1,3 +1,4 @@
+/*
 import { AfterMiddleware, BeforeMiddleware, HttpRequest, HttpResponse, LambdaEventMiddleware, RoutableClass, Router } from "./SimpleRouter";
 
 // Example Middlewares START
@@ -102,3 +103,4 @@ module.exports.example4 = async (event: AWSLambda.APIGatewayProxyEventV2) => {
     return responseToLambda(response);
 };
 // Build up the response END
+*/
