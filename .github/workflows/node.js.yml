@@ -14,6 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
     - name: Use Node.js
       uses: actions/setup-node@v3
       with:
@@ -25,3 +27,5 @@ jobs:
         npx sfdx plugins:install @salesforce/sfdx-scanner
     - name: SFDX Scanner
       uses: mattisdada/sfdx-scan-pull-request@main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
