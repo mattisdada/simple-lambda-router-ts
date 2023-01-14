@@ -3,7 +3,7 @@ import { HttpRequest } from "./HttpRequest";
 
 export enum HttpCodes {
     REDIRECT_PERMANENT = 301,
-    REDIRECT_TEMPORARY = 302,
+    REDIRECT_TEMPORARY = 302, // test
     SUCCESS = 200,
     ERROR = 500,
     NOT_FOUND = 404,
