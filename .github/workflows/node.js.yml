@@ -1,7 +1,7 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Node.js CI
+name: Lint
 
 on:
   pull_request:
@@ -25,10 +25,6 @@ jobs:
       run: |
         npm install sfdx-cli
         npx sfdx plugins:install @salesforce/sfdx-scanner
-    - name: Show GitHub context
-      env:
-        GITHUB_CONTEXT: ${{ toJson(github) }}
-      run: echo "$GITHUB_CONTEXT"
     - name: SFDX Scanner
       uses: mattisdada/sfdx-scan-pull-request@main
       env:
