@@ -25,7 +25,13 @@ jobs:
       run: |
         npm install sfdx-cli
         npx sfdx plugins:install @salesforce/sfdx-scanner
+    - name: Show GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
     - name: SFDX Scanner
       uses: mattisdada/sfdx-scan-pull-request@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        commit_sha: ${{ github.event.pull_request.head.sha }}
