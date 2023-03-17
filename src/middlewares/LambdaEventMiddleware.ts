@@ -11,6 +11,8 @@ export class LambdaEventMiddleware implements BeforeMiddleware {
 
         try {
             request.bodyObject = JSON.parse(event.body || "");
-        } catch (e) {} // test
+        } catch (e) {
+            console.error(e);
+        }
     }
 }
