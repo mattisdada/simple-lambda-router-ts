@@ -31,4 +31,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         commit_sha: ${{ github.event.pull_request.head.sha }}
-        use-comments: false
+        use-comments: true
