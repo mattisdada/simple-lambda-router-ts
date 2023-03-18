@@ -1,4 +1,4 @@
-import { KeyValuePair } from "./SimpleRouter"; // test (still in PR, but remove)
+import { KeyValuePair } from "./SimpleRouter";
 
 export class HttpRequest {
     public body: string;

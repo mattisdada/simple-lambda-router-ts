@@ -1,4 +1,4 @@
-import { AfterMiddleware, BeforeMiddleware, Router } from "../SimpleRouter"; // test
+import { AfterMiddleware, BeforeMiddleware, Router } from "../SimpleRouter";
 import { HttpRequest } from "../HttpRequest";
 import { HttpResponse } from "../HttpResponse";
 
