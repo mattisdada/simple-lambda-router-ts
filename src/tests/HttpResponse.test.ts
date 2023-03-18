@@ -1,4 +1,4 @@
-import { HttpCodes, Router, KeyValuePair } from "../SimpleRouter";
+import { HttpCodes, Router } from "../SimpleRouter";
 
 test("router respond success", async () => {
     const router = new Router();
