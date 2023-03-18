@@ -1,4 +1,6 @@
-import { AfterMiddleware, BeforeMiddleware, HttpCodes, HttpRequest, HttpResponse, Router } from "../SimpleRouter"; // test
+import { AfterMiddleware, BeforeMiddleware, HttpCodes, Router } from "../SimpleRouter"; // test
+import { HttpRequest } from "../HttpRequest";
+import { HttpResponse } from "../HttpResponse";
 
 test("create middleware", async () => {
     //const router = new Router();

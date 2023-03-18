@@ -1,4 +1,4 @@
-import { KeyValuePair } from "./SimpleRouter";
+import { KeyValuePair, HttpCodes } from "./SimpleRouter";
 
 export class HttpRequest {
     public body: string;

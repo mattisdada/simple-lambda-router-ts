@@ -1,6 +1,6 @@
 import { HttpRequest } from "../HttpRequest";
 import { HttpResponse } from "../HttpResponse";
-import { BeforeMiddleware } from "../SimpleRouter";
+import { BeforeMiddleware, Middleware } from "../SimpleRouter";
 
 export class LambdaEventMiddleware implements BeforeMiddleware {
     async before(request: HttpRequest, response: HttpResponse, context: any) {

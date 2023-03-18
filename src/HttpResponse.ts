@@ -1,4 +1,4 @@
-import { HttpCodes, KeyValuePair } from "./SimpleRouter";
+import { HttpCodes, KeyValuePair, Middleware } from "./SimpleRouter";
 
 export class HttpResponse {
     public data: any = {};
