@@ -1,6 +1,6 @@
 import { HttpRequest } from "../HttpRequest";
 import { HttpResponse } from "../HttpResponse";
-import { BeforeMiddleware } from "../SimpleRouter";
+import { BeforeMiddleware, AfterMiddleware } from "../SimpleRouter";
 
 export class LambdaEventMiddleware implements BeforeMiddleware {
     async before(request: HttpRequest, response: HttpResponse, context: any) {
@@ -11,6 +11,8 @@ export class LambdaEventMiddleware implements BeforeMiddleware {
 
         try {
             request.bodyObject = JSON.parse(event.body || "");
-        } catch (e) {}
+        } catch (e) {
+            // test 2
+        }
     }
 }
