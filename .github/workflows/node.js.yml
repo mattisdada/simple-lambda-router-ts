@@ -28,4 +28,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        report-mode: check-runs
+        report-mode: comments
+        delete-resolved-comments: true
+
