@@ -29,3 +29,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         report-mode: check-runs
+        severity-threshold: 3
